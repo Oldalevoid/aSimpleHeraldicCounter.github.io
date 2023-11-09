@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=UnifrakturCook:wght@700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  scroll-behavior: smooth;
+  font-family: "UnifrakturCook", cursive;
+}
+
+html {
+  font-size: 60%;
+  overflow-x: hidden; /* Nasconde il contenuto orizzontalmente se sfora l'elemento */
+}
+
+.page {
+  width: 100%;
+  min-height: 100vh;
+  background-color: lightslategray;
+}
+
+.page-content {
+  padding: 1rem;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(/assets/Wood.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.number {
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.number h2 {
+  font-size: 6rem;
+  text-align: center;
+  
+  
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+.number h1 {
+  font-size: 15rem;
+  color: black;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+  font-style: italic;
+  margin-right: 2rem;
+  
+  
+}
+
+.buttons {
+  width: 100%;
+  max-height: 40vh;
+  display: flex;
+  flex-direction: column;
+  
+  
+  
+
+}
+
+button {
+  
+  width: 100%;
+  height: 50%;
+  margin-bottom: 4px;
+  padding: 1rem;
+
+ 
+  font-size: 4rem;
+  border: 2px solid black;
+}
+
+#Increase {
+  background-image: url(/assets/Increase.jpg);
+  background-position: center;
+  background-size: 200%;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+#Decrease {
+  background-image: url(/assets/Decrease.jpg);
+  background-position: center;
+  background-size: cover;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+#Resetta {
+  background-image: url(/assets/Reset.jpg);
+  background-position: center;
+  background-size: cover;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+
+
+
+
+@media only screen and (min-width: 650px) and (max-height: 513px) {
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  button {
+    width: 30%;
+    height: 100px;
+    margin-left: 5px;
+  }
+  
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) and (min-height: 514px) {
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  button {
+    height: 150px;
+    margin-left: 5px;
+  }
+ 
+  .number {
+    margin-bottom: -15rem;
+  }
+    
+  .number h1 {
+    font-size: 30rem;
+    
+  }
+
+  .number h2 {
+    font-size: 10rem;
+    margin-top: -300px;
+    
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .number h1 {
+    font-size: 30rem;
+  }
+
+  .number h2 {
+    font-size: 10rem;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  button {
+    height: 150px;
+    margin-left: 5px;
+  }
+}
+
+
+

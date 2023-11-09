@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    
+    <title> Test </title>
+</head>
+<body>
+
+    <div class="page">
+    
+    <div class="page-content"> 
+    <div class="number">
+        <h2> A Simple Heraldic Counter </h2>
+        <h1> 0 </h1>
+    </div>
+
+    <div class="buttons">
+        <button id="Increase"> Increase </button>
+        <button id="Decrease"> Decrease </button>
+        <button id="Resetta"> Reset </button>
+    </div>
+    </div>
+
+
+    </div>
+   
+    
+    <script>
+        
+
+        let increase = document.getElementById("Increase");
+        let decrease = document.getElementById("Decrease");
+        let resetta = document.getElementById("Resetta")
+        let numero = document.querySelector("h1");
+        
+
+        function incremento(){
+            let result = Number(numero.textContent);
+            result++;
+            
+            console.log (result);
+            return result;
+        }
+        function decremento(){
+            let result = Number(numero.textContent);
+            result--;
+            console.log (result);
+            return result;
+        }
+
+        function azzera(){
+            let result = Number(numero.textContent) * 0;
+            return result;
+        }
+
+
+        increase.addEventListener("click", ()=>{
+            numero.innerHTML = incremento();
+        });
+
+        decrease.addEventListener("click", ()=>{
+            numero.innerHTML=decremento();
+        });
+
+        resetta.addEventListener("click", ()=>{
+            numero.innerHTML=azzera();
+        });
+
+       
+
+
+        
+
+
+
+       
+    </script>
+
+</body>
+</html>
