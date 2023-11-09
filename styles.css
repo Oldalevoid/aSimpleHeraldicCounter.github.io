@@ -99,7 +99,7 @@ button {
   text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
 }
 
-#Resetta {
+#Reset {
   background-image: url(/assets/Reset.jpg);
   background-position: center;
   background-size: cover;
