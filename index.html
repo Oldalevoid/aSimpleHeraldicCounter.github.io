@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="index.js" defer></script>
     
     <title> Test 1 </title>
 </head>
@@ -28,56 +29,6 @@
     </div>
    
     
-    <script>
-        
-
-        let increase = document.getElementById("Increase");
-        let decrease = document.getElementById("Decrease");
-        let reset = document.getElementById("Reset")
-        let number = document.querySelector("h1");
-        
-
-        function buttonIncrease(){
-            let result = Number(number.textContent);
-            result++;
-            
-            console.log (result);
-            return result;
-        }
-        function buttonDecrease(){
-            let result = Number(number.textContent);
-            result--;
-            console.log (result);
-            return result;
-        }
-
-        function buttonZero(){
-            let result = Number(number.textContent) * 0;
-            return result;
-        }
-
-
-        increase.addEventListener("click", ()=>{
-            number.innerHTML = buttonIncrease();
-        });
-
-        decrease.addEventListener("click", ()=>{
-            number.innerHTML=buttonDecrease();
-        });
-
-        reset.addEventListener("click", ()=>{
-            number.innerHTML=buttonZero();
-        });
-
-       
-
-
-        
-
-
-
-       
-    </script>
-
+    
 </body>
 </html>
