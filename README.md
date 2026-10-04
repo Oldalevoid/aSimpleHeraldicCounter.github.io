@@ -20,4 +20,4 @@ Apri il file index.html nel tuo browser web.
 Utilizza i pulsanti "+" e "-" per incrementare o decrementare il contatore.
 Clicca sul pulsante "Azzera" per riportare il contatore a 0.
 
-Oppure è disponibile al seguente link: https://654e500e4badc50008b3462b--venerable-gumption-100e82.netlify.app/
+Oppure è disponibile al seguente link: (https://heraldic-counter.vercel.app/)
